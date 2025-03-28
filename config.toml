@@ -1,0 +1,9 @@
+# Enables SyncPoint.
+enable-sync-point = true
+
+# Aligns the upstream and downstream snapshots every 5 minutes
+sync-point-interval = "30s"
+
+# Cleans up the ts-map data in the downstream tidb_cdc.syncpoint_v1 table every hour
+sync-point-retention = "1h"
+

@@ -1,0 +1,21 @@
+global:
+  user: "tidb"
+  ssh_port: 22
+  deploy_dir: "/tidb-deploy"
+  data_dir: "/tidb-data"
+
+pd_servers:
+  - host: 10.148.0.6
+    name: "pd1"
+    client_port: 2379
+    peer_port: 2380
+
+tidb_servers:
+  - host: 10.148.0.6
+    port: 4000
+    status_port: 10080
+
+tikv_servers:
+  - host: 10.148.0.6
+    port: 20160
+    status_port: 20180 
